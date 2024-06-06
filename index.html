@@ -1,1 +1,357 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: serif;
+            color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: relative; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+        }
+
+        h1 {
+            text-shadow: 2px 2px 4px #808080;
+            color: #ffffff;
+            font-size: 40px;
+            text-align: center; 
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .icon {
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 40px;
+            margin-left: 20px;         
+        }
+
+        img {
+            width: 300px; 
+            height: auto; 
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 6px #ffffff;
+        }
+
+        #home-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .icon-container {
+            background-color: #333;
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+         
+        }
+
+        .icon-wrapper {
+            display: flex;
+            align-items: center;
+        }
+	    #skills {
+        background-color:#c9c9c9;
+        padding: 20px ; 
+	    color:#000000;
+        }
+
+       .skills-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+       .skill h3 {
+        margin-top: 10px;
+        font-size: 24px;
+	    padding:10px;
+        }
+        #skills h2 {
+        font-size: 36px; 
+	    padding:30px;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+       .skill {
+        margin-bottom: 30px;
+        }
+
+       .skill img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+	    margin-bottom: 5px;
+        }
+        .skill p {
+        font-size: 16px;
+        color: #555;
+	    width:100%;
+        }
+       .skill-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        box-shadow: 0px 0px 10px #000000; 
+        }
+
+        #projects {
+        background: url('https://e0.pxfuel.com/wallpapers/846/344/desktop-wallpaper-portfolio.jpg') no-repeat center center fixed;
+        padding: 40px 0; 
+        }
+        #projects h2{
+        font-size: 36px; 
+	    padding:30px;
+	    text-shadow: 2px 2px 4px #ffffff;
+        }
+
+        .project {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #c7c7c7; 
+        border-radius: 5px;
+		box-shadow: 0px 0px 6px #888888; 
+        }
+
+       .project img {
+        width: 50%; 
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 10px #000000;	
+        }
+       .project h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+	    color:#000000;
+        }
+       .project p {
+       font-size: 16px; 
+       color: #000;
+       margin-bottom: 20px;
+       }
+      .project a {
+       display: inline-block; 
+       background-color: #333; 
+       color: #fff; 
+       padding: 10px 20px; 
+       border-radius: 5px; 
+       text-decoration: none; 
+       transition: background-color 0.3s; 
+       }
+      .project a:hover {
+       background-color: #555; 
+       }
+       #contact-container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px 0;
+        }
+        .contact-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+        }
+
+        .contact-description {
+        font-size: 18px;
+        margin-bottom: 20px;
+        }
+
+        .contact-info {
+         font-size: 20px;
+         margin-bottom: 20px;
+        }
+
+        .contact-icons a {
+         color: #000;
+         text-decoration: none;
+         margin: 0 15px;
+         font-size: 24px;
+        }
+		footer {
+         background-color: #333;
+         color: #fff;
+         text-align: center;
+         padding: 15px ;
+        }
+
+        footer p {
+        margin: 0;
+        }
+		.contact-outline {
+         border: 1px solid #fff;
+         padding: 20px;
+         border-radius: 10px;
+         margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="icon">
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icon-wrapper">
+            <div class="icon-container">A</div>
+            <span class="icon">Alex</span> 
+        </div>
+    </header>
+    
+    <div id="home-section">
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Alex's Portfolio</h1>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo=">
+                <h2 style="margin-bottom: 20px;"><b>Hi, this is Alex</b></h2>
+                <p style="margin-bottom: 20px;">Myself Alex, a proficient web developer with
+                a passion for creating captivating online experiences.</p>
+                <p><b> An expertise in front-end and back-end development</b></p>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+   <section id="skills">
+    <div class="container">
+        <h2><center>Skills</center></h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img class="skill-img" src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" alt="Skill 1">
+                <h3>Front-end developer</h3>
+                <p> I do create engaging and user-friendly web interfaces, with a
+				keen eye for design and proficiency in HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="skill">
+                <img class="skill-img" src="https://www.imaginarycloud.com/blog/content/images/2021/01/backenddeveloper-1.jpeg" alt="Skill 2">
+                <h3>Back-end developer</h3>
+                <p>Iam a strong server-side programming expertise, enabling the 
+				seamless functionality of web applications through languages like
+  				Python, Ruby, or Java.</p>
+            </div>
+			<div class="skill">
+                <img class="skill-img" src="https://www.netguru.com/hs-fs/hubfs/Double%20exposure%20of%20businessman%20shows%20modern%20technology%20as%20concept-1.jpeg?width=1000&height=601&name=Double%20exposure%20of%20businessman%20shows%20modern%20technology%20as%20concept-1.jpeg" alt="Skill 3">
+                <h3>Database management</h3>
+                <p>I can manage databases, ensuring data integrity and efficient 
+				retrieval using SQL or NoSQL technologies, to support robust web
+				applications.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="projects">
+    <div class="container">
+        <h2><center>Projects<center></h2>
+
+        <div class="project">
+		   <center>
+            <img src="https://zdblogs.zohocorp.com/commerce/insights/sites/commerce/insights/files/2023-04/Ecommerce%20Statistics%201.png" alt="Project 1">
+            <h3>E-commerce website development</h3>
+            <p>My e-commerce website project offers a seamless online
+			shopping experience with a wide range of products.</p><br> 
+			<p><b>Click below for more details</b></p>
+            <a href='/project1'>Learn More</a></center>
+        </div>
+
+        <div class="project">
+		    <center>
+            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/jsfiddle_logo_icon_169464.png" alt="Project 2">
+            <h3>JS Fiddle online editor</h3>
+            <p>This is my online editor project provides a platform for
+			coding, testing, and sharing web development projects
+			effortlessly.</p><br>
+            <p><b> Click below for more details</b></p>
+            <a href='/project2'>Learn More</a></center>
+        </div>
+
+        <div class="project">
+		 <center>
+            <img src="https://i.ytimg.com/vi/Nhy0VWAMsFU/maxresdefault.jpg" alt="Project 1">
+            <h3>Flutter quiz app</h3>
+            <p>This is my quiz app project that offers an engaging and
+			interactive way to test your knowledge on a variety of topics.</p><br> 
+			<p><b>Click below for more details</b></p>
+            <a href='/project3'>Learn More</a></center>
+        </div>
+		
+    </div>
+ <section id="contact">
+        <div id="contact-container">
+           
+            <div class="contact-outline">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-description">Feel free to contact me for any inquiries or collaborations.</p>
+                <p class="contact-info"><b>Email:</b> alex@example.com</p>
+                <p class="contact-info"><b>Phone:</b> +1234567890</p>
+                <p class="contact-info">
+                    <b>Social Media:</b>
+                    <a href="https://www.linkedin.com/in/alex" target="_blank">LinkedIn</a> |
+                    <a href="https://github.com/alex" target="_blank">GitHub</a> |
+                    <a href="mailto:alex@example.com" target="_blank">Email</a>
+                </p>
+            </div>
+        </div>
+    </section>
+	<footer>
+        <div class="container">
+            <p>&copy; 2023 Alex's Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
